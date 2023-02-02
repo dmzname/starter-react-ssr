@@ -1,0 +1,42 @@
+{
+  "name": "starter-react-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "starter-react-ssr": "bin/dev.js"
+  },
+  "scripts": {
+    "build:dev": "webpack --config webpack.config.js",
+    "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "env NODE_ENV=development node ./bin/dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmZabelin/starter-react-ssr.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmZabelin/starter-react-ssr/issues"
+  },
+  "homepage": "https://github.com/dmZabelin/starter-react-ssr#readme",
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "copy-webpack-plugin": "^11.0.0",
+    "nodemon": "^2.0.20",
+    "react-refresh": "^0.14.0",
+    "react-refresh-typescript": "^2.0.7",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-middleware": "^6.0.1",
+    "webpack-hot-middleware": "^2.25.3",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
