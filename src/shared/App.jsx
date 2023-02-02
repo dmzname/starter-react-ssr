@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from "./app.scss";
 
 function App() {
 	return (
-			<div>APP STARTED WITH SSR AND HMR!</div>
+			<div className={styles.root}>APP STARTED WITH SSR AND HMR!</div>
 	)
 }
 
